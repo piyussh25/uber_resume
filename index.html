@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Title shown on browser tab -->
+    <title>Ezese Your Travel</title>
+
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <!-- Website name and tagline -->
+    <header>
+        <h1>Ezese Your Travel</h1>
+        <p>Compare. Choose. Travel Smart.</p>
+    </header>
+
+<div class="main-container">
+
+    <!-- ============== JOURNEY INPUT SECTION ============== -->
+    <!-- User enters source and destination -->
+    <div class="input-container">
+
+        <!-- Source location input -->
+        <input type="text" id="fromLocation" placeholder="From (Source)" list="from-cities">
+        <datalist id="from-cities"></datalist>
+
+        <!-- Destination location input -->
+        <input type="text" id="toLocation" placeholder="To (Destination)" list="to-cities">
+        <datalist id="to-cities"></datalist>
+
+    </div>
+
+    <!-- ============== OPTION SELECTION SECTION ============== -->
+    <!-- User selects Bus or Cab -->
+    <div class="option-container">
+
+        <!-- Bus option card -->
+        <div class="option-card" onclick="selectBus()">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 6H4a2 2 0 0 0-2 2v8a2 2 0 0 0 2 2h14a2 2 0 0 0 2-2V8a2 2 0 0 0-2-2z"/><path d="M6 16h1m5 0h1m5 0h1M4 11h16"/></svg>
+            <h2>Bus</h2>
+            <p>Compare bus services</p>
+        </div>
+
+        <!-- Cab option card -->
+        <div class="option-card" onclick="selectCab()">
+            <svg class="icon" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 17s-1-3-4-3H7s-4 3-4 3"/><path d="M4 17V6a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v11"/><path d="M12 17a2 2 0 1 0 0-4 2 2 0 0 0 0 4z"/></svg>
+            <h2>Cab</h2>
+            <p>Compare cab services</p>
+        </div>
+
+    </div>
+
+</div>
+
+    <!-- Linking external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
