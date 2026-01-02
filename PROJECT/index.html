@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <!-- Title shown on browser tab -->
+    <title>Ezese Your Travel</title>
+
+    <!-- Linking external CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- ================= HEADER SECTION ================= -->
+    <!-- Website name and tagline -->
+    <header>
+        <h1>Ezese Your Travel</h1>
+        <p>Compare. Choose. Travel Smart.</p>
+    </header>
+
+    <!-- ============== JOURNEY INPUT SECTION ============== -->
+    <!-- User enters source and destination -->
+    <div class="input-container">
+
+        <!-- Source location input -->
+        <input type="text" id="fromLocation" placeholder="From (Source)">
+
+        <!-- Destination location input -->
+        <input type="text" id="toLocation" placeholder="To (Destination)">
+
+    </div>
+
+    <!-- ============== OPTION SELECTION SECTION ============== -->
+    <!-- User selects Bus or Cab -->
+    <div class="option-container">
+
+        <!-- Bus option card -->
+        <div class="option-card" onclick="selectBus()">
+            <h2>Bus</h2>
+            <p>Compare bus services</p>
+        </div>
+
+        <!-- Cab option card -->
+        <div class="option-card" onclick="selectCab()">
+            <h2>Cab</h2>
+            <p>Compare cab services</p>
+        </div>
+
+    </div>
+
+    <!-- Linking external JavaScript file -->
+    <script src="script.js"></script>
+</body>
+</html>
